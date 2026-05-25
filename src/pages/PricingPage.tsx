@@ -354,7 +354,7 @@ function PricingPage() {
             <a className="button button-primary" href="/app/signup">
               Create free account
             </a>
-            <a className="button button-secondary" href="/api/checkout?plan=founder">
+            <a className="button button-secondary" href="/checkout?plan=founder">
               Choose Founder
             </a>
           </div>
