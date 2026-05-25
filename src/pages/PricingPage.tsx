@@ -84,6 +84,19 @@ function PricingPage() {
   return (
     <div className="pricing-page">
       <header className="pricing-topbar">
+        <a
+          className="pricing-home-link"
+          href="https://harryhowardai.com"
+          aria-label="Return to Howard AI homepage"
+        >
+          <img
+            className="pricing-home-link-icon"
+            src="https://res.harryhowardai.com/icons/howardai-icon.png"
+            alt="Howard AI"
+          />
+          <span>Back to Home</span>
+        </a>
+
         <div className="member-menu-shell">
           <button
             type="button"

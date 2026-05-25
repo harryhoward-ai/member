@@ -31,7 +31,44 @@
 
 .pricing-topbar {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pricing-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 10px 16px 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: var(--text-high);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: var(--card-shadow);
+  backdrop-filter: blur(22px);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.pricing-home-link-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .pricing-home-link {
+    gap: 10px;
+    padding-right: 14px;
+    font-size: 0.92rem;
+  }
+
+  .pricing-home-link span {
+    white-space: nowrap;
+  }
 }
 
 .member-menu-shell {
