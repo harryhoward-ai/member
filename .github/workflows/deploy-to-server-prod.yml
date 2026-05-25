@@ -28,6 +28,7 @@ jobs:
         run: npm run build
         env: 
           CI: ""
+          VITE_PAYPAL_CLIENT_ID: ${{ secrets.VITE_PAYPAL_CLIENT_ID }}
 
       - name: upload
         uses: moonpathbg/scp_uploader@latest
