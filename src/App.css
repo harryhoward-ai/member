@@ -27,6 +27,7 @@
 .faq-section,
 .final-cta {
   position: relative;
+  min-width: 0;
 }
 
 .pricing-topbar {
@@ -431,12 +432,15 @@
 }
 
 .comparison-shell {
+  width: 100%;
+  max-width: 100%;
   overflow-x: auto;
   padding: 12px;
   border-radius: 28px;
+  -webkit-overflow-scrolling: touch;
 
   @media (max-width: 767px) {
-    display: none;
+    padding: 8px;
   }
 }
 
@@ -468,11 +472,6 @@
 
 .comparison-cards {
   display: none;
-
-  @media (max-width: 767px) {
-    display: grid;
-    gap: 14px;
-  }
 }
 
 .comparison-card {
